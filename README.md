@@ -13,14 +13,17 @@ Role Variables
 --------------
 
 Required variables:
-k8s_api_lb_ip
-* The IP address of the load balancer to be used for the Kubernetes API, i.e. "192.168.1.50"
-k8s_cert_org_name
-* Org name for certificates, i.e. "Kubernetes The Hard Way"
-k8s_conf_files_dir
-* ...
-local_id
-* ...
+* k8s_api_lb_ip
+The IP address of the load balancer to be used for the Kubernetes API, i.e. "192.168.1.50"
+
+* k8s_cert_org_name
+Org name for certificates, i.e. "Kubernetes The Hard Way"
+
+* k8s_conf_files_dir
+...
+
+* local_id
+...
 
 These will default to the values on the current host. If you're running against a remote target, supply these variables.
 k8s_cert_cfssl_os:
