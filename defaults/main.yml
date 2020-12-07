@@ -4,6 +4,7 @@ k8s_cert_org_name:
 k8s_cert_fssl_version: "1.4.1"
 k8s_cert_cfssl_checksum_url: "https://github.com/cloudflare/cfssl/releases/download/v{{ k8s_cert_cfssl_version }}/cfssl_{{ k8s_cert_cfssl_version }}_checksums.txt"
 k8s_cert_cfssl_dir: "/usr/local/bin"
+k8s_cert_expiry: "8760h"
 # will use current system os and arch from ansible facts - if running against remote system with different os or arch, pass the value(s) manually instead
 k8s_cert_cfssl_os: "{{ ansible_system|lower }}"
 k8s_cert_cfssl_arch: "{{ cpu_arch[ansible_architecture] }}"

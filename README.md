@@ -22,6 +22,9 @@ Org name for certificates, i.e. "Kubernetes The Hard Way"
 * k8s_conf_files_dir:
 ...
 
+* k8s_cert_expiry:
+How long the certificates should be valid for, i.e. "8760h"
+
 * local_id:
 ...
 
@@ -53,4 +56,4 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+https://www.linkedin.com/in/chrisdiehl817/

@@ -1,16 +1,16 @@
 {
   "signing": {
     "default": {
-      "expiry": "8760h"
+      "expiry": "{{k8s_cert_expiry}}"
     },
     "profiles": {
       "kubernetes": {
         "usages": ["signing", "key encipherment", "server auth", "client auth"],
-        "expiry": "8760h"
+        "expiry": "{{k8s_cert_expiry}}"
       },
       "client": {
         "usages": ["signing","key encipherment","client auth"],
-        "expiry": "8760h"
+        "expiry": "{{k8s_cert_expiry}}"
       }
     }
   }
