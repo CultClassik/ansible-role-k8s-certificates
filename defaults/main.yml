@@ -1,6 +1,9 @@
 ---
 k8s_api_lb_ip:
 k8s_cert_org_name:
+k8s_cert_api_hosts:
+k8s_cert_etcd_hosts:
+k8s_cert_node_hosts:
 k8s_cert_cfssl_version: "1.4.1"
 k8s_cert_cfssl_checksum_url: "https://github.com/cloudflare/cfssl/releases/download/v{{ k8s_cert_cfssl_version }}/cfssl_{{ k8s_cert_cfssl_version }}_checksums.txt"
 k8s_cert_cfssl_dir: "/usr/local/bin"
